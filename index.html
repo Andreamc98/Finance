@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perplexité – Recherche assistée par IA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-gradient"></div>
+    <header class="app-header">
+      <div class="logo">
+        <span class="logo-icon">?</span>
+        <span class="logo-text">Perplexité</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#" class="nav-link active">Accueil</a>
+        <a href="#" class="nav-link">Découvrir</a>
+        <a href="#" class="nav-link">Bibliothèque</a>
+        <a href="#" class="nav-link">Projets</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn ghost">Se connecter</button>
+        <button class="btn primary">Essayer Pro</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="search-panel">
+        <div class="search-header">
+          <div>
+            <h1>Explorez n'importe quel sujet en quelques secondes</h1>
+            <p>
+              Posez vos questions, découvrez des sources fiables et obtenez des
+              réponses synthétiques, le tout propulsé par l'intelligence
+              artificielle.
+            </p>
+          </div>
+          <div class="search-metrics">
+            <div class="metric">
+              <span class="metric-value">98%</span>
+              <span class="metric-label">de satisfaction</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">4.8</span>
+              <span class="metric-label">note moyenne</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            placeholder="Demandez n'importe quoi..."
+            aria-label="Champ de recherche"
+          />
+          <button class="btn primary">Rechercher</button>
+        </div>
+
+        <div class="search-tags">
+          <span>Suggestions :</span>
+          <button class="tag" data-query="Qu'est-ce que le machine learning ?">
+            Machine learning
+          </button>
+          <button class="tag" data-query="Dernières tendances IA 2024">
+            IA 2024
+          </button>
+          <button class="tag" data-query="Comment fonctionne la blockchain ?">
+            Blockchain
+          </button>
+          <button class="tag" data-query="Meilleurs livres sur la finance comportementale">
+            Finance comportementale
+          </button>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="card highlights">
+          <h2>Résultats en vedette</h2>
+          <div class="result-item">
+            <div class="result-badge">Synthèse</div>
+            <h3>Comprendre le rôle de l'IA générative en entreprise</h3>
+            <p>
+              L'IA générative transforme la manière dont les organisations
+              innovent en automatisant la création de contenu, en accélérant la
+              recherche et en personnalisant les expériences clients.
+            </p>
+            <ul class="sources">
+              <li><a href="#">MIT Technology Review</a></li>
+              <li><a href="#">Harvard Business Review</a></li>
+              <li><a href="#">OECD AI Policy</a></li>
+            </ul>
+          </div>
+          <div class="result-item">
+            <div class="result-badge">Analyse</div>
+            <h3>Impact de l'IA sur le marché du travail</h3>
+            <p>
+              Selon les dernières études, l'IA est susceptible de redéfinir
+              près de 40&nbsp;% des métiers en automatisant les tâches
+              répétitives tout en créant de nouvelles opportunités.
+            </p>
+            <ul class="sources">
+              <li><a href="#">World Economic Forum</a></li>
+              <li><a href="#">OCDE</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <aside class="card sidebar">
+          <h2>Tendance aujourd'hui</h2>
+          <ul class="trend-list">
+            <li class="trend-item">
+              <div>
+                <span class="trend-rank">1</span>
+                <span class="trend-topic">Fusion nucléaire : les dernières avancées</span>
+              </div>
+              <button class="icon-button" data-query="Fusion nucléaire dernières avancées">
+                ↗
+              </button>
+            </li>
+            <li class="trend-item">
+              <div>
+                <span class="trend-rank">2</span>
+                <span class="trend-topic">L'IA dans la santé prédictive</span>
+              </div>
+              <button class="icon-button" data-query="IA santé prédictive">
+                ↗
+              </button>
+            </li>
+            <li class="trend-item">
+              <div>
+                <span class="trend-rank">3</span>
+                <span class="trend-topic">Crédit carbone pour PME</span>
+              </div>
+              <button class="icon-button" data-query="Crédit carbone pour PME">
+                ↗
+              </button>
+            </li>
+            <li class="trend-item">
+              <div>
+                <span class="trend-rank">4</span>
+                <span class="trend-topic">Finance décentralisée expliquée</span>
+              </div>
+              <button class="icon-button" data-query="Finance décentralisée expliquée">
+                ↗
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="card conversation">
+          <div class="conversation-header">
+            <h2>Conversation en cours</h2>
+            <button class="btn ghost">Nouveau fil</button>
+          </div>
+          <div class="chat-bubble user">
+            <span class="avatar">TU</span>
+            <div>
+              <p>
+                Peux-tu me donner un plan d'apprentissage pour comprendre la
+                finance comportementale ?
+              </p>
+              <span class="timestamp">Tu – il y a 2 min</span>
+            </div>
+          </div>
+          <div class="chat-bubble assistant">
+            <span class="avatar">IA</span>
+            <div>
+              <p>
+                Bien sûr ! Voici une feuille de route qui couvre les concepts
+                clés, des lectures recommandées et des cas pratiques pour
+                appliquer tes connaissances.
+              </p>
+              <span class="timestamp">IA – il y a 1 min</span>
+            </div>
+          </div>
+          <div class="chat-input">
+            <input
+              type="text"
+              placeholder="Poursuivre la conversation..."
+              aria-label="Message"
+            />
+            <button class="btn primary">Envoyer</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div class="footer-links">
+        <a href="#">À propos</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions</a>
+        <a href="#">Centre d'aide</a>
+      </div>
+      <span class="footer-copy">© 2024 Perplexité, Inc.</span>
+    </footer>
+
+    <div class="floating-action">
+      <button class="btn primary" id="quick-question">Poser une question</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
